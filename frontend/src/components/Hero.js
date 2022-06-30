@@ -19,7 +19,7 @@ const Hero = () => {
   return (
     <section className="pr-5 md:my-8 md:space-y-0 patterns">
       <div className="flex flex-col md:flex-row ">
-        <div className="flex p-4 flex-col mt-24">
+        <div className="flex p-8 flex-col mt-8 md:mt-24 ">
           <h1 className="text-4xl font-bold md:text-7xl">Hello. I’m Chetan</h1>
           <p className="tracking-wide leading-relaxed pt-5 pb-10">
             I have a passion for developing user-friendly, accessible and
@@ -27,7 +27,7 @@ const Hero = () => {
             project is another adventure.{" "}
           </p>
         </div>
-        <div className="container" ref={container}></div>
+        <div className="p-8 container" ref={container}></div>
       </div>
     </section>
   );

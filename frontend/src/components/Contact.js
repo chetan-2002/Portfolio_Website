@@ -21,8 +21,9 @@ const Contact = () => {
           </div>
           <a
             className="border-b-2 mt-3 inline-block border-gray-500"
-            href="./Resume - Chetan Thakral.pdf"
-            target="_blank"
+            // href="./Resume - Chetan Thakral.pdf"
+            // target="_blank"
+            href="/"
             rel="noreferrer"
           >
             Resume

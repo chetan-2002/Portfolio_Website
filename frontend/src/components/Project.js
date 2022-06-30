@@ -4,11 +4,11 @@ import projects from "../projectData";
 const Project = () => {
   return (
     <>
-      <section className="my-16 px-5" id="projects">
+      <section className="my-4 px-5" id="projects">
         <header className="text-2xl  md:text-4xl font-bold pt-10">
           <h2>Projects</h2>
         </header>
-        <div className="grid grid-cols-1 gap-4 md: grid md:grid-cols-2 md:gap-4 md:mb-3 my-12">
+        <div className="grid grid-cols-1 gap-4 md: grid md:grid-cols-2 md:gap-4 md:mb-3 my-4">
           {projects.map((project, index) => (
             <div className="flex flex-col overflow-auto  space-y-3 my-3 ">
               <image src={project.image}></image>
