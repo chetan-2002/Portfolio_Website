@@ -2,11 +2,11 @@ import React from "react";
 
 const Header = () => {
   return (
-    <nav className="flex flex-row space-x-96">
-      <a href="/" className="w-30 h-24">
+    <nav className="md:flex md:flex-row sm:flex sm:flex-col">
+      <a href="/" className="hidden md:block md:w-30 md:h-24">
         <img src="./images/logo1.png" alt="Ct"></img>
       </a>
-      <ul className="flex flex-row space-x-4 md:space-x-10 md:py-6 md:text-2xl justify-center md:justify-end font-thin">
+      <ul className="flex flex-row flex-auto justify-center items-center md:justify-end md:space-x-10 md:text-2xl  sm:space-x-6 font-thin">
         <li>
           <a
             href="#projects"
