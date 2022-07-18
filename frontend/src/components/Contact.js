@@ -13,7 +13,7 @@ const Contact = () => {
             <p className="font-bold">Chetan Thakral</p>
             <p className="font-thin">Delhi ,India</p>
             <a
-              href="mailto: chetanthakral325.com"
+              href="mailto: chetanthakral325@gmail.com"
               className="border-b-2 mt-3 inline-block border-gray-500"
             >
               chetanthakral325@gmail.com
@@ -21,9 +21,8 @@ const Contact = () => {
           </div>
           <a
             className="border-b-2 mt-3 inline-block border-gray-500"
-            // href="./Resume - Chetan Thakral.pdf"
-            // target="_blank"
-            href="/"
+            href="./chetan_resume.pdf"
+            target="_blank"
             rel="noreferrer"
           >
             Resume
