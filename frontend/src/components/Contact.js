@@ -1,6 +1,26 @@
 import React from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_2qegk6w",
+        "template_ur6vnyi",
+        e.target,
+        "OYin7dlCVETAlXKvu"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
   return (
     <section className="mb-12" id="contact">
       <header className="px-5 text-2xl font-bold pt-10">
@@ -89,6 +109,7 @@ const Contact = () => {
 
         <div className="bg-gray px-5 py-10 md:py-8 sm:p-8 my-2 md:rounded-lg shadow-lg  justify-between w-full  md:w-6/12 ">
           <form
+            onSubmit={sendEmail}
             className="flex flex-col space-y-3 m-auto w-full"
             name="contact"
             method="post"
@@ -98,9 +119,9 @@ const Contact = () => {
             <label htmlFor="name">Name</label>
             <input
               type="text"
-              name="name"
+              name="from_name"
               id="name"
-              className="gradient"
+              className="gradient "
               required
             ></input>
             <label htmlFor="email">Email</label>

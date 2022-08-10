@@ -8,16 +8,20 @@ const Project = () => {
         <header className="text-2xl  md:text-4xl font-bold pt-10">
           <h2>Projects</h2>
         </header>
-        <div className="grid grid-cols-1 gap-4 md: grid md:grid-cols-2 md:gap-4 md:mb-3 my-4">
+        <div className="grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-8 md:mb-3 my-4">
           {projects.map((project, index) => (
-            <div className="flex flex-col overflow-auto  space-y-3 my-3 ">
-              <image src={project.image}></image>
+            <div className="flex flex-col overflow-auto  space-y-3 my-6 ">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-auto h-64 rounded-lg"
+              ></img>
               <h3 className="uppercase font-bold text-lg">{project.title}</h3>
               <p>{project.description}</p>
-              <div className="flex overflow-auto space-x-3 pb-2">
+              <div className="flex overflow-auto space-x-3 pb-2 pt-4">
                 {project.tools.map((disc, index) => (
                   <span
-                    className="border border-gray-500 px-2 py-1 rounded-lg text-sm"
+                    className="border border-gray-500 px-2 py-1 rounded-lg text-sm text-center flex justify-center items-center"
                     key={index}
                   >
                     {disc}
